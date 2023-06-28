@@ -5,6 +5,9 @@ import AppCategory from "./components/AppCategory.vue"
 import AppProduct from "./components/AppProduct.vue";
 import AppDetailsProduct from "./components/AppDetailsProduct.vue";
 import AppBlog from "./components/AppBlog.vue";
+import AppCta from "./components/AppCta.vue";
+import AppService from "./components/AppService.vue"
+import AppFooter from "./components/AppFooter.vue";
 
 export default {
   data(){
@@ -19,6 +22,9 @@ export default {
     AppProduct,
     AppDetailsProduct,
     AppBlog,
+    AppCta,
+    AppService,
+    AppFooter,
   }
 }
 </script>
@@ -30,6 +36,9 @@ export default {
     <AppCategory />
     <AppProduct />
     <AppBlog />
+    <AppCta />
+    <AppService />
+    <AppFooter />
   </section>
 </template>
 
