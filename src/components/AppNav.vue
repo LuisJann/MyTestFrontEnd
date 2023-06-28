@@ -10,23 +10,23 @@ export default {
 <template>
 <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand text-white" href="#">Demo</a>
+    <a class="navbar-brand text-white" href="/">Demo</a>
     <button class="navbar-toggler text-white bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon text-white"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link text-white active icon" aria-current="page" href="#">shop</a>
+          <a class="nav-link text-white active" aria-current="page" href="#">shop</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white icon" href="#">product</a>
+          <a class="nav-link text-white " href="#">product</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white icon" href="#">lookbook</a>
+          <a class="nav-link text-white " href="#">lookbook</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white icon" href="#">blog</a>
+          <a class="nav-link text-white " href="#">blog</a>
         </li>
       </ul>
       <div class="d-flex" >
@@ -35,7 +35,7 @@ export default {
           <a class="nav-link text-white active icon" aria-current="page" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white icon" href="#"><i class="fa-regular fa-user"></i></a>
+          <a class="nav-link text-white icon" href="/registration"><i class="fa-regular fa-user"></i></a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white icon position-relative" href="#"><i class="fa-regular fa-heart"></i> 
