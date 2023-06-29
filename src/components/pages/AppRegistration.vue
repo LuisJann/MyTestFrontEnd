@@ -133,7 +133,7 @@ export default {
                     <li>Minimo 10 caratteri <span v-if="this.password.length < 10"> <i class="fa-solid fa-xmark"></i> </span>
                     <span v-else><i class="fa-solid fa-check"></i></span>
                     </li>
-                    <li>Non avere spazi <span v-if="this.password.includes(' ')"> <i class="fa-solid fa-xmark"></i></span>
+                    <li>Non deve avere spazi <span v-if="this.password.includes(' ')"> <i class="fa-solid fa-xmark"></i></span>
                     <span v-else><i class="fa-solid fa-check"></i></span></li>
                     <li>Non deve contere il tuo nome <span v-if="this.password.toLowerCase().includes(this.firstName.toLowerCase())"> <i class="fa-solid fa-xmark"></i></span>
                     <span v-else><i class="fa-solid fa-check"></i></span></li>
