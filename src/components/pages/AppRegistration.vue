@@ -159,9 +159,11 @@ export default {
 
 <style lang="scss" scoped>
 .wrapper{
-    height: 100vh;
+    min-height: 100vh ;
+    max-height: 200vh;
     // background-color: lightgrey;
     padding-top: 2vh;
+    padding-bottom: 2vh;
 
     .home{
       width: 50px;
