@@ -82,7 +82,6 @@ export default {
       validatePassword(password) {
       console.log("validate");
       const numericRegex = /\d/;
-      const specialCharRegex = /[^a-zA-Z0-9]/;
       const nameRegex = new RegExp(this.firstName, 'i');
       const surnameRegex = new RegExp(this.lastName, 'i');
 
@@ -136,9 +135,9 @@ export default {
                     </li>
                     <li>Non avere spazi <span v-if="this.password.includes(' ')"> <i class="fa-solid fa-xmark"></i></span>
                     <span v-else><i class="fa-solid fa-check"></i></span></li>
-                    <li>Non contere il tuo nome <span v-if="this.password.toLowerCase().includes(this.firstName.toLowerCase())"> <i class="fa-solid fa-xmark"></i></span>
+                    <li>Non deve contere il tuo nome <span v-if="this.password.toLowerCase().includes(this.firstName.toLowerCase())"> <i class="fa-solid fa-xmark"></i></span>
                     <span v-else><i class="fa-solid fa-check"></i></span></li>
-                    <li>Non contenere il tuo cognome <span v-if="this.password.toLowerCase().includes(this.lastName.toLowerCase())"> <i class="fa-solid fa-xmark"></i></span>
+                    <li>Non deve contenere il tuo cognome <span v-if="this.password.toLowerCase().includes(this.lastName.toLowerCase())"> <i class="fa-solid fa-xmark"></i></span>
                     <span v-else><i class="fa-solid fa-check"></i></span></li>
                   </ul>
                 </div>
