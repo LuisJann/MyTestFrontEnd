@@ -97,10 +97,12 @@ export default {
 <template>
     <div class="wrapper bg-dark bg-gradient">
         <div class="container">
-          <div class="form-container shadow bg-light bg-gradient">
-            <h2 class="text-center fw-bold mt-2">Registrazione</h2>
+          <div class="form-container shadow bg-light bg-gradient position-relative">
+            <div class="d-flex flex-column ">
+              <h2 class="text-center fw-bold mt-2">Registrazione</h2>
+              <a href="/" class="btn btn-primary home"> <i class="fa-solid fa-house"></i></a>
+            </div>
             <form @submit.prevent="validateForm" class="pb-5 px-5">
-                <a href="/" class="btn btn-primary mb-4 text-center">Home</a>
                 <div class="">
                     <label  for="first-name" class="form-label">First name *</label>
                     <input :class="this.firstName === '' || this.firstName === ' ' ? 'border border-danger' : 'border border-success'" type="text" class="form-control" id="first-name"  v-model="firstName" required>
@@ -162,10 +164,15 @@ export default {
     // background-color: lightgrey;
     padding-top: 2vh;
 
+    .home{
+      width: 50px;
+      margin: 0 auto;
+    }
+
     .form-container{
       background-color: white;
       width: 70vw;
-      height: 95vh;
+      height: 90vh;
       margin: 0 auto;
       border: 1px solid black;
       border-radius: 10px;
