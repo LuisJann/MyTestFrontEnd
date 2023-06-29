@@ -95,9 +95,9 @@ export default {
 </script>
 
 <template>
-    <div class="wrapper bg-dark bg-gradient">
+    <div class="wrapper bg-primary bg-gradient">
         <div class="container">
-          <div class="form-container shadow bg-light bg-gradient position-relative">
+          <div class="form-container shadow bg-light bg-gradient position-relative mt-4">
             <div class="d-flex flex-column ">
               <h2 class="text-center fw-bold mt-2">Registrazione</h2>
               <a href="/" class="btn btn-primary home"> <i class="fa-solid fa-house"></i></a>
@@ -128,13 +128,14 @@ export default {
               </div>
               <div class="mb-3">
                 <label for="password" class="form-label">Password *</label>
-                <input type="password" class="form-control" id="password" v-model="password" required>
+                <input :class="this.password === '' || this.password === ' ' ? 'border border-danger' : 'border border-success'" type="password" class="form-control" id="password" v-model="password" required>
                 <div class="alert alert-danger" role="alert"  v-if="!passwordValid">
                   <ul>
                     <h5>Inserisci una password valida:</h5>
                     <li>Minimo 10 caratteri <span v-if="this.password.length < 10"> <i class="fa-solid fa-xmark"></i> </span>
                     <span v-else><i class="fa-solid fa-check"></i></span>
                     </li>
+                    <li>Avere almeno un carattere numerico <span v-if="this.password.match(/\d/)"><i class="fa-solid fa-check"></i></span> <span v-else><i class="fa-solid fa-xmark"></i></span></li>
                     <li>Non deve avere spazi <span v-if="this.password.includes(' ')"> <i class="fa-solid fa-xmark"></i></span>
                     <span v-else><i class="fa-solid fa-check"></i></span></li>
                     <li>Non deve contere il tuo nome <span v-if="this.password.toLowerCase().includes(this.firstName.toLowerCase())"> <i class="fa-solid fa-xmark"></i></span>
@@ -146,10 +147,8 @@ export default {
               </div>
               <div class="mb-3">
                     <label for="password-confirm" class="form-label">Confirm password *</label>
-                    <input type="password" class="form-control" id="password-confirm" v-model="passwordConfirm" required>
-                    <div class="alert alert-danger" role="alert" v-if="!passwordConfirmValid">
-                      Le password devo essere uguali
-                    </div>
+                    <label for="password-confirm" class="form-label text-danger ms-2" v-if="!passwordConfirmValid"> Le password devono essere uguali</label>
+                    <input :class="this.passwordConfirm === '' || this.passwordConfirm === ' ' ? 'border border-danger' : 'border border-success'" type="password" class="form-control" id="password-confirm" v-model="passwordConfirm" required>
                     </div>
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>
@@ -171,8 +170,8 @@ export default {
 
     .form-container{
       background-color: white;
-      width: 70vw;
-      height: 90vh;
+      max-width: 60%;
+      height: 70%;
       margin: 0 auto;
       border: 1px solid black;
       border-radius: 10px;
