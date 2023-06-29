@@ -17,16 +17,16 @@ export default {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link text-white active" aria-current="page" href="#">shop</a>
+          <a class="nav-link text-white active" aria-current="page" href="#shop">shop</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="#">product</a>
+          <a class="nav-link text-white " href="#product">product</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="#">lookbook</a>
+          <a class="nav-link text-white " href="#blog">blog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="#">blog</a>
+          <a class="nav-link text-white " href="#cta">newsletter</a>
         </li>
       </ul>
       <div class="d-flex" >

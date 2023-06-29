@@ -8,7 +8,7 @@ export default{
 </script>
 
 <template>
-    <div class="wrapper bg-light py-5">
+    <div id="product" class="wrapper bg-light py-5">
         <div class="container position-relative pb-5">
             <div class="text-center w-50 mx-auto mb-5">
                 <h2 class="fs-3">best selling products</h2>

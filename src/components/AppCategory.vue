@@ -8,7 +8,7 @@ export default{
 </script>
 
 <template>
-<div class="wrapper bg-light py-5">
+<div id="shop" class="wrapper bg-light py-5">
     <div class="container d-flex flex-xl-row flex-lg-row  flex-md-row flex-sm-column flex-column justify-content-between">
     
        <div class="card-category position-relative">

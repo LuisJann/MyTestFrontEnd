@@ -8,7 +8,7 @@ export default{
 </script>
 
 <template>
-<div class="wrapper bg-light py-5">
+<div id="cta" class="wrapper bg-light py-5">
     <div class="container">
         <div class="text-center w-50 mx-auto mb-5 mt-5">
             <h2 class="fs-3">subscribe our newsletter</h2>
