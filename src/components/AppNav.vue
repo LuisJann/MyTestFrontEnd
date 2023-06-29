@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-<nav class="navbar navbar-expand-lg fixed-top bg-black bg-opacity-25 rounded-5 rounded-top-0 ">
+<nav class="navbar navbar-expand-lg fixed-top bg-black bg-opacity-25 rounded-5 rounded-top-0 shadow ">
   <div class="container-fluid">
     <a class="navbar-brand text-white" href="/">Demo</a>
     <button class="navbar-toggler text-white bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
