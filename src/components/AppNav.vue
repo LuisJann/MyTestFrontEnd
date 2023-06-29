@@ -35,7 +35,7 @@ export default {
           <a class="nav-link text-white active icon" aria-current="page" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white icon" href="/registration"><i class="fa-regular fa-user"></i></a>
+          <a class="nav-link text-white icon" href="/MyTestFrontEnd/registration"><i class="fa-regular fa-user"></i></a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white icon position-relative" href="#"><i class="fa-regular fa-heart"></i> 
