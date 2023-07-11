@@ -22,7 +22,7 @@ export default{
                 <div class="col">
                     <div class="bg-white shadow rounded product position-relative">
                         <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger badge fs-5"> -33% </span>
-                        <a href="">
+                        <a href="/MyTestFrontEnd/product">
                         <img src="../assets/img/products/poltrona.png" alt="">
                         </a>
                     </div>
